@@ -16,12 +16,12 @@ $$
 1/6 & \textrm{if} \quad 240 \le t' < 360 \\
 0.5 & \textrm{if} \quad 360 \le t' < 420 \\
 1/6 & \textrm{if} \quad 420 \le t' < 540 \\
-0.5 & \textrm{if} \qquad 540 \le t' < 600
+0.5 & \textrm{if} \quad 540 \le t' < 600
 \end{cases}
 $$
 
 To ensure that t' is between 0 and 600 (and thus telling you the time of day) you can do the following
 
 $$
-t' = t - 600\textrm{floor}\left( \frac{t}{600} )  
+t' = t - 600\textrm{floor}\left( \frac{t}{600} \right)  
 $$
