@@ -23,7 +23,7 @@ $$
 To ensure that t' is between 0 and 600 (and thus telling you the time of day) you can do the following
 
 $$
-t' = t - 600\textrm{floor}\left( \frac{t}{600} \right)  
+t' = t - 600 \times \textrm{floor}\left( \frac{t}{600} \right)  
 $$
 
 This ensures that you subtract 600 minutes from the time if the time you are given is at some point on day 2. 
