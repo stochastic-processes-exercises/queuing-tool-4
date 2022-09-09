@@ -26,4 +26,4 @@ $$
 t' = t - 600 \times \textrm{floor}\left( \frac{t}{600} \right)  
 $$
 
-This ensures that you subtract 600 minutes from the time if the time you are given is at some point on day 2. 
+This ensures that you subtract 600 minutes from the time if the time you are given is at some point on day 2.  __Please do not change the name of the function called `rate` when you tackle this exercise as this is the function that is being tested.__ 
