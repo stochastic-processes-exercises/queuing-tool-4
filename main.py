@@ -4,7 +4,14 @@ import numpy as np
 from mm1 import *
 
 def rate(t) :
-    return 0.25
+    tp = t - np.floor(t/600)*600 
+    if tp<60 : return 0.5
+    if tp<180 : return 1/6 
+    if tp<240 : return 0.5 
+    if tp<360 : return 1/6
+    if tp<420 : return 0.5
+    if tp<540 : return 1/6
+    return 0.5
 
 def arr_f(t):
     return qt.poisson_random_measure(t, rate, 0.5 )
