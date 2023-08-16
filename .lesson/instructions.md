@@ -8,22 +8,10 @@ In my simulations, however, I have assumed that customers arrive at a uniform ra
 
 Notice that you can use something like the following function to describe how the rate changes during a single day:
 
-$$
-\lambda(t') = \begin{cases}
-0.5 & \textrm{if} \quad 0 \le t' < 60 \\
-1/6 & \textrm{if} \quad 60 \le t' < 180 \\
-0.5 & \textrm{if} \quad 180 \le t' < 240 \\
-1/6 & \textrm{if} \quad 240 \le t' < 360 \\
-0.5 & \textrm{if} \quad 360 \le t' < 420 \\
-1/6 & \textrm{if} \quad 420 \le t' < 540 \\
-0.5 & \textrm{if} \quad 540 \le t' < 600
-\end{cases}
-$$
+![](equation-1.png)
 
 To ensure that t' is between 0 and 600 (and thus telling you the time of day) you can do the following
 
-$$
-t' = t - 600 \times \textrm{floor}\left( \frac{t}{600} \right)  
-$$
+![](equation-2.png)
 
 This ensures that you subtract 600 minutes from the time if the time you are given is at some point on day 2.  __Please do not change the name of the function called `rate` when you tackle this exercise as this is the function that is being tested.__ 
